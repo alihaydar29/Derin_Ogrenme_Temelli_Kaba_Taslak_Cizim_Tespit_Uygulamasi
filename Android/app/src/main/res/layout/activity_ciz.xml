@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cizlayout"
+    android:background="@color/cigdem"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Clayoutust"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/drawingView"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <TextView
+            android:id="@+id/txtbeklenencizim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="---"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+        <ImageButton
+            android:contentDescription="soru"
+            android:id="@+id/imgbtnciz"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/question_40"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtcizsure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <com.example.sketchup.DrawingView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/drawingView"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintTop_toBottomOf="@id/Clayoutust"
+        app:layout_constraintBottom_toTopOf="@+id/txtcizsonuc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtcizsonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Sonuc"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@id/Clayoutalt"
+        app:layout_constraintTop_toBottomOf="@id/drawingView"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Clayoutalt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:id="@+id/btncizdegistir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Degistir"
+            android:backgroundTint="@android:color/transparent"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/btnciztemizle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Temizle"
+            app:layout_constraintEnd_toStartOf="@+id/btncizkaydet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btncizdegistir"
+
+            android:backgroundTint="@android:color/transparent"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+
+            />
+        <Button
+            android:id="@+id/btncizkaydet"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Test Et"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnciztemizle"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btncizdegistir"
+
+            android:backgroundTint="@android:color/transparent"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

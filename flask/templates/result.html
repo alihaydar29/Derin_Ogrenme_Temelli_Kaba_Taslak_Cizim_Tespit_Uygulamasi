@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Convolutional Layer Outputs</h1>
+    <div>
+        {% for result in results %}
+        <h2>{{ result.name }}</h2>
+        <img src="{{ url_for('static', filename=result.image_filename) }}" alt="{{ result.name }}">
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conv2D Katman Çıktıları</title>
+</head>
+<body>
+    <h1>Conv2D Katman Çıktıları</h1>
+    <h4>Eğer katman çıktıları görünmüyorsa sayfayı yenileyin...</h4>
+    <div class="result-container">
+        {% for result in results %}
+            <div class="result-item">
+                <h3>{{ result.name }}</h3>
+                <img src="{{ url_for('static', filename=result.image_filename) }}" alt="{{ result.name }}">
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

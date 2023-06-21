@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dikeyanaekran"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgmainresim"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/pencil"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmainBasla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başla"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@id/btnmainresimler"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgmainresim" />
+
+    <Button
+        android:id="@+id/btnmainresimler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+
+        android:text="Resimler"
+        android:textSize="35dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@id/btnmainBasla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

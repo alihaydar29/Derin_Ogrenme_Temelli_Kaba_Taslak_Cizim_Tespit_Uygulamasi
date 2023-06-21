@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Katman Çıktıları</title>
+</head>
+<body>
+    <h1>Katman Çıktıları</h1>
+    {% for result in results[:10] %}
+        <h2>{{ result.name }}</h2>
+        <img src="data:image/jpeg;base64,{{ result.image }}" />
+    {% endfor %}
+</body>
+</html>
