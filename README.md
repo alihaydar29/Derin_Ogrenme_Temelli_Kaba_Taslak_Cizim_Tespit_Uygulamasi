@@ -15,6 +15,11 @@ Bu çalışmada, eskiz tanımaya yönelik model tasarlanmış ve modelin kullan�
 
 ![image](https://github.com/alihaydar29/Derin_Ogrenme_Temelli_Kaba_Taslak_Cizim_Tespit_Uygulamasi/assets/90692465/49db6151-5533-4b2a-813e-2ba78ec5bd9e)
 
+### Projenin Demo çalışması
+
+
+
+https://github.com/alihaydar29/Derin_Ogrenme_Temelli_Kaba_Taslak_Cizim_Tespit_Uygulamasi/assets/90692465/7b6c3df7-cf60-460b-83da-69b1861763cb
 
 
 
